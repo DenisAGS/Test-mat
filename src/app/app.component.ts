@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,16 +9,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'test-mat';
 
-  devCheckbox: boolean = false;
-  proxyCheckbox: boolean = false;
-  result: string = '';
-
-  selectCheckboxChange(checkboxType: string): void {
-    if (checkboxType === 'dev') {
-      this.proxyCheckbox = false;
-    } else if (checkboxType === 'proxy') {
-      this.devCheckbox = false; 
-    }
-  }
+  constructor(private router: Router) {}
 }
-
