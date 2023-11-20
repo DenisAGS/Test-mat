@@ -13,6 +13,9 @@ export class Front5aComponent implements OnInit {
 
   opciones: string[] = ['Simpson', 'T-distribution'];
 
+  opcionesError: string[] = ['1', '2', '3', '4', '5', '6'];
+
+
   opcionSeleccionada: string = '';
 
   constructor() { }

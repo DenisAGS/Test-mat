@@ -35,8 +35,6 @@
           </select>
         </section>
         
-        <button onclick="calculate()">Calculate</button>
-
         <div id="result-container">
           <label for="result">Result:</label>
           <output id="result"></output>
@@ -55,24 +53,20 @@
 
           <div class="ecuaciones">
             <div class="content-section">
-                <label for="content-Data">Seg:</label>
-                <div class="content-box">
-                    <div class="info-content">
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                        <p>4</p>
-                        <p>5</p>
-                      </div>
-                </div>
+                <section>
+                  <label for="content-title-Data">Seg:</label>
+                  <select for="opcionesError" id="opcionesError" [(ngModel)]="opcionSeleccionada">
+                    <option *ngFor="let opcion of opcionesError" [value]="opcion">{{ opcion }}</option>
+                  </select>
+                    <label id="error-label" for="error">Error:</label>
+                    <input type="text" id="error" [(ngModel)]="errorValue">    
+                </section>
               </div>
-              <div class="correlation">
-                <label for="error">Error:</label>
-                <input type="text" id="error" [(ngModel)]="errorValue">    
-              </div>
+
           </div>
-      </div>
-      
+          <button onclick="calculate()">Calculate</button>
+        </div>
+        
     </div>
 
     <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677"

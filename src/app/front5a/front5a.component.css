@@ -93,7 +93,7 @@
   }
 
   #result-container{
-    margin:30px 0; 
+    margin:20px 0;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -109,12 +109,18 @@
 
 .content-section {
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
-  .content-section label{
+  .content-section section{
+    display: flex;
+  }
+
+  .content-section section #error-label{
+    margin-left: 40px;
     margin-right: 10px;
   }
+
 
   .ecuaciones{
     display: flex;
