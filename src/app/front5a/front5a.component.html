@@ -54,10 +54,9 @@
           <div class="ecuaciones">
             <div class="content-section">
                 <section>
-                  <label for="content-title-Data">Seg:</label>
-                  <select for="opcionesError" id="opcionesError" [(ngModel)]="opcionSeleccionada">
-                    <option *ngFor="let opcion of opcionesError" [value]="opcion">{{ opcion }}</option>
-                  </select>
+                  <label id="content-title-Data" for="content-title-Data">Seg:</label>
+                  <input type="text" id="seg" [(ngModel)]="errorValue">    
+
                     <label id="error-label" for="error">Error:</label>
                     <input type="text" id="error" [(ngModel)]="errorValue">    
                 </section>

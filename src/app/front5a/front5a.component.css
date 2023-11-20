@@ -121,7 +121,9 @@
     margin-right: 10px;
   }
 
-
+  .content-section #content-title-Data{
+    margin-right: 10px;
+  }
   .ecuaciones{
     display: flex;
   }
